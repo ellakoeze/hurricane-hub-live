@@ -1,2 +1,2 @@
 # hurricane-hub-live
-public folder of hurricane hub
+https://ellakoeze.github.io/hurricane-hub-live/
