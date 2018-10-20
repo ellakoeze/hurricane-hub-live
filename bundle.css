@@ -23,5 +23,20 @@ a {
     background-color: #ffffff;
     cursor: pointer; }
 
+.row-wrapper {
+  display: flex;
+  width: 100%; }
+
+.form-wrapper {
+  display: block;
+  width: 50%; }
+
+#map {
+  background-color: #ffffff;
+  width: 50%; }
+
+.hurricane {
+  stroke: #f0f; }
+
 
 /*# sourceMappingURL=bundle.css.map*/
