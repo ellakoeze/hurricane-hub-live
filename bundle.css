@@ -7,7 +7,9 @@ body {
   color: #4A5999; }
 
 .section-1 {
-  display: flex; }
+  display: flex;
+  margin-bottom: 40px;
+  margin-top: 40px; }
 
 a {
   color: #4A5999;
@@ -48,26 +50,51 @@ a {
     cursor: pointer;
     color: #ffffff; }
 
+.reset-button {
+  margin-top: 12px; }
+
 .row-wrapper {
   display: flex;
   width: 100%;
   justify-content: space-between; }
+  @media only screen and (max-width: 1024px) {
+    .row-wrapper {
+      display: block; } }
 
 .form-wrapper {
   display: block;
-  width: 50%;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  width: 35%;
+  margin-right: 20px; }
+
+.check-wrap {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ffffff; }
+  .check-wrap .check-name {
+    font-size: 12px;
+    margin-left: 5px; }
 
 .button-section {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 12px;
   border-bottom: 1px solid #ffffff; }
+  .button-section .button-wrap {
+    width: 48%; }
+    .button-section .button-wrap .range {
+      width: 90%; }
+  .button-section.off {
+    pointer-events: none; }
+    .button-section.off select {
+      color: #999999 !important;
+      border: 1px solid #999 !important; }
 
 .button-label {
   font-size: 12px;
   text-transform: uppercase;
-  font-weight: 400;
-  width: 200px; }
+  font-weight: 400; }
 
 #button-wrap {
   display: flex; }
@@ -85,6 +112,11 @@ a {
   margin-left: 20px;
   font-weight: 700;
   color: #4A5999; }
+  #text #no-track {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-style: italic; }
 
 #ex {
   padding-bottom: 2px;
@@ -105,25 +137,39 @@ a {
     background-color: #4A5999;
     color: #ffffff; }
 
+#map-wrap {
+  width: 60%; }
+  @media only screen and (max-width: 1024px) {
+    #map-wrap {
+      width: 100%; } }
+
 #map {
   background-color: #FFF0DF;
   overflow: hidden;
   margin-bottom: 40px;
   border: 2px #4A5999 solid;
-  height: 450px; }
+  height: 450px;
+  max-width: 800px; }
 
 .hurricane {
   outline: none;
-  fill: #222; }
+  fill: #222;
+  cursor: pointer; }
   .hurricane:hover {
     stroke: #606AD4 !important;
     stroke-width: 2px !important; }
   .hurricane.selected {
     stroke: #1F2ECC !important;
-    stroke-width: 2px !important; }
+    stroke-width: 2px !important;
+    stroke-linecap: round; }
 
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 60px; }
+  @media only screen and (max-width: 1024px) {
+    table {
+      font-size: 12px; } }
   table th {
     border-bottom: 1px solid black;
     font-size: 12px;
@@ -131,6 +177,9 @@ table {
     font-weight: 400;
     cursor: pointer;
     padding: 3px; }
+    @media only screen and (max-width: 1024px) {
+      table th {
+        font-size: 10px; } }
     table th:hover {
       background-color: #4A5999;
       color: #ffffff; }
@@ -138,15 +187,21 @@ table {
       background-color: #ffffff;
       color: #4A5999; }
   table td {
-    border-right: 1px #E2F7FF solid;
-    border-bottom: 1px #E2F7FF solid;
+    border: 1px #ffffff solid;
     width: 10%;
     max-width: 200px;
     padding: 5px;
-    background-color: #ffffff; }
-  table tbody tr:hover td {
-    background-color: #4A5999;
-    color: #ffffff; }
+    background-color: #E2F7FF; }
+  table tbody tr {
+    cursor: pointer; }
+    table tbody tr:hover td {
+      background-color: #4A5999;
+      color: #ffffff; }
+
+.actual-link {
+  color: #f0f; }
+  .actual-link:hover {
+    text-decoration: underline; }
 
 
 /*# sourceMappingURL=bundle.css.map*/
